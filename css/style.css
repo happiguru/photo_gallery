@@ -1,5 +1,5 @@
 body {
-    padding-top: ;
+    padding-top: 0;
 }
 
 .navbar {
@@ -16,7 +16,7 @@ body {
     color: white;
 }
 
-.navbar-light .navbar-nav .active > .nav-link {
+.navbar-light .navbar-nav .active>.nav-link {
     color: white;
 }
 
@@ -25,7 +25,8 @@ body {
     background: #ecf0f1;
 }
 
-.img-thumbnail a>img, .img-thumbnail>img {
+.img-thumbnail a>img,
+.img-thumbnail>img {
     margin-right: auto;
     margin-left: auto;
     width: 100%;
