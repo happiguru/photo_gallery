@@ -12,4 +12,14 @@ usersRoutes.post(
   ],
   userController.signupUser
 );
+
+usersRoutes.post(
+  "/login",
+  [
+    check("email").normalizeEmail().isEmail(),
+    check("password").notEmpty().isLength({ min: 8 }),
+  ],
+  userController.loginUser
+);
+
 module.exports = usersRoutes;
